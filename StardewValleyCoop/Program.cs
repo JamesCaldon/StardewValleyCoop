@@ -116,7 +116,7 @@ for (int instanceIndex = 0; instanceIndex < handlerConfig.numberOfPlayers; insta
 
     // Start Application or Inject into runtime
     InstanceHandler processHandler = new(config,
-        $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\ProtoInput1.1.2\\",
+        $"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}\\ProtoInput\\",
         processHandlerLogger);
 
 

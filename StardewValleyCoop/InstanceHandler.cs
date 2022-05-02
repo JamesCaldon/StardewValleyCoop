@@ -200,77 +200,77 @@ internal class InstanceHandler
 
 		internal static class NativeMethods
 		{
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern uint EasyHookInjectRuntime(uint pid, string dllFolderPath);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void InstallHook(ProtoInstanceHandle instanceHandle, ProtoHookIDs hookID);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void UninstallHook(ProtoInstanceHandle instanceHandle, ProtoHookIDs hookID);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void EnableMessageFilter(ProtoInstanceHandle instanceHandle, ProtoMessageFilterIDs filterID);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void DisableMessageFilter(ProtoInstanceHandle instanceHandle, ProtoMessageFilterIDs filterID);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void EnableMessageBlock(ProtoInstanceHandle instanceHandle, uint messageID);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void DisableMessageBlock(ProtoInstanceHandle instanceHandle, uint messageID);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void WakeUpProcess(ProtoInstanceHandle instanceHandle);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void UpdateMainWindowHandle(ProtoInstanceHandle instanceHandle, UInt64 hwnd = 0);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetupState(ProtoInstanceHandle instanceHandle, int instanceIndex);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetupMessagesToSend(ProtoInstanceHandle instanceHandle,
 																	  bool sendMouseWheelMessages = true, bool sendMouseButtonMessages = true, bool sendMouseMoveMessages = true, bool sendKeyboardPressMessages = true);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void StartFocusMessageLoop(ProtoInstanceHandle instanceHandle, int milliseconds = 5,
 																		bool wm_activate = true, bool wm_activateapp = true, bool wm_ncactivate = true, bool wm_setfocus = true, bool wm_mouseactivate = true);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void StopFocusMessageLoop(ProtoInstanceHandle instanceHandle);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetDrawFakeCursor(ProtoInstanceHandle instanceHandle, bool enable);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetExternalFreezeFakeInput(ProtoInstanceHandle instanceHandle, bool enableFreeze);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void AddSelectedMouseHandle(ProtoInstanceHandle instanceHandle, uint mouseHandle);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void AddSelectedKeyboardHandle(ProtoInstanceHandle instanceHandle, uint keyboardHandle);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetControllerIndex(ProtoInstanceHandle instanceHandle, uint controllerIndex, uint controllerIndex2 = 0, uint controllerIndex3 = 0, uint controllerIndex4 = 0);
 
 			// This MUST be called before calling InstallHook on the Xinput hook
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetUseDinputRedirection(ProtoInstanceHandle instanceHandle, bool useRedirection);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetUseOpenXinput(ProtoInstanceHandle instanceHandle, bool useOpenXinput);
 
 			// Both of these functions require RenameHandlesHookHookID hook
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void AddHandleToRename(ProtoInstanceHandle instanceHandle, string name);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void AddNamedPipeToRename(ProtoInstanceHandle instanceHandle, string name);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetDinputDeviceGUID(ProtoInstanceHandle instanceHandle,
 				ulong Data1,
 				ushort Data2,
@@ -285,28 +285,28 @@ internal class InstanceHandler
 				byte Data4h);
 
 			// This MUST be called before calling InstallHook on the Dinput order hook
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void DinputHookAlsoHooksGetDeviceState(ProtoInstanceHandle instanceHandle, bool enable);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetSetWindowPosSettings(ProtoInstanceHandle instanceHandle, int posx, int posy, int width, int height);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetCreateSingleHIDName(ProtoInstanceHandle instanceHandle, string name);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetCursorClipOptions(ProtoInstanceHandle instanceHandle, bool useFakeClipCursor);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void AllowFakeCursorOutOfBounds(ProtoInstanceHandle instanceHandle, bool allowOutOfBounds, bool extendBounds);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetToggleFakeCursorVisibilityShortcut(ProtoInstanceHandle instanceHandle, bool enabled, uint vkey);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetRawInputBypass(ProtoInstanceHandle instanceHandle, bool enabled);
 
-			[DllImport("ProtoInput1.1.2\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
+			[DllImport("ProtoInput\\ProtoInputLoader64.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
 			internal static extern void SetShowCursorWhenImageUpdated(ProtoInstanceHandle instanceHandle, bool enabled);
 
 			[DllImport("Kernel32.dll", SetLastError = true)]

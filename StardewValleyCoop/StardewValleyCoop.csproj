@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,12 +9,58 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ProtoInput1.1.2-og\**" />
-    <Compile Remove="ProtoInput1.1.2\**" />
-    <EmbeddedResource Remove="ProtoInput1.1.2-og\**" />
-    <EmbeddedResource Remove="ProtoInput1.1.2\**" />
-    <None Remove="ProtoInput1.1.2-og\**" />
-    <None Remove="ProtoInput1.1.2\**" />
+    <Compile Remove="ProtoInput-og\**" />
+    <Compile Remove="ProtoInput\**" />
+    <EmbeddedResource Remove="ProtoInput-og\**" />
+    <EmbeddedResource Remove="ProtoInput\**" />
+    <None Remove="ProtoInput-og\**" />
+    <None Remove="ProtoInput\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ProtoInput\ProtoInputHooks32.dll" />
+    <None Remove="ProtoInput\ProtoInputHooks64.dll" />
+    <None Remove="ProtoInput\ProtoInputInjector32.exe" />
+    <None Remove="ProtoInput\ProtoInputInjector64.exe" />
+    <None Remove="ProtoInput\ProtoInputInjectorProxy32.dll" />
+    <None Remove="ProtoInput\ProtoInputInjectorProxy64.dll" />
+    <None Remove="ProtoInput\ProtoInputLoader32.dll" />
+    <None Remove="ProtoInput\ProtoInputLoader64.dll" />
+    <None Remove="ProtoInput\ProtoInputUtilDynamic32.dll" />
+    <None Remove="ProtoInput\ProtoInputUtilDynamic64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ProtoInput\ProtoInputHooks32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputHooks64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputInjector32.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputInjector64.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputInjectorProxy32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputInjectorProxy64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputLoader32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputLoader64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputUtilDynamic32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProtoInput\ProtoInputUtilDynamic64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
